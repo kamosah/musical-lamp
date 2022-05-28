@@ -1,11 +1,8 @@
+import { Todo } from '@myorg/data';
 import { useEffect, useState } from 'react';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import styles from './app.module.css';
-
-interface Todo {
-  title: string;
-}
 
 export function App() {
   const [todos, setTodos] = useState<Todo[]>([
